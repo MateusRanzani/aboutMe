@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
 html,
 body,
 div,
@@ -86,6 +88,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -97,7 +100,8 @@ video {
 
   position: absolute;
   width: 100vw;
-  height: 4.5rem;
+  min-height: 4.5rem;
+  max-height: auto;
   left: 0px;
   top: 0px;
 
@@ -105,20 +109,65 @@ video {
   border-bottom: 1px solid #5429cc;
 }
 
-.buttonsMenuTopBar {
-    margin: 0 auto;
-    max-width: 70rem;
-    height: 4.5rem;
+.menuTopBarArea {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 4.5rem;
 
-     /* background: red; */
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-row-gap: 1em;
 }
 
 .bodyPage {
-    padding-top:4.5rem;
-    margin: 0 auto;
-    width: 70rem;
-    max-width: 70rem;
-    color: white;
-    
-    /* background: red; */
+  padding-top: 4.5rem;
+  margin: 0 auto;
+  width: 70rem;
+  max-width: 70rem;
+  color: white;
+}
+
+.menuButton {
+  cursor: pointer;
+
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  height: 45%;
+  padding: 0.1rem 2rem;
+
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+
+  margin: 0rem 3%;
+
+  border: 2px solid;
+  border-color: #33cc95;
+
+  transition: 0.2s;
+
+  white-space: nowrap;
+}
+
+.menuButton:hover {
+  transform: scale(1.03);
+}
+
+.iconButtonMenu {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .menuTopBarArea {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-row-gap: 1em;
+  }
 }
