@@ -1,5 +1,9 @@
 import React from "react";
-import { UserIcon } from "@heroicons/react/24/solid";
+import {
+  UserIcon,
+  PhoneIcon,
+  CodeBracketIcon,
+} from "@heroicons/react/24/solid";
 import "./../styles/global.css";
 
 interface buttonProps {
@@ -9,9 +13,17 @@ interface buttonProps {
 function MenuButton(props: buttonProps) {
   return (
     <div className="menuButton">
-      <UserIcon className="iconButtonMenu" />
+      {props.textToButton === "ABOUT ME" && (
+        <UserIcon className="iconButtonMenu" />
+      )}
+      {props.textToButton === "CONTACT" && (
+        <PhoneIcon className="iconButtonMenu" />
+      )}
+      {props.textToButton === "PROJECTS" && (
+        <CodeBracketIcon className="iconButtonMenu" />
+      )}
+
       <p>{props.textToButton}</p>
-      
     </div>
   );
 }

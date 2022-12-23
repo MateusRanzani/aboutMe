@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: Barrio;
+  src: url(../);
+}
 
 html,
 body,
@@ -89,6 +98,14 @@ video {
   vertical-align: baseline;
 }
 
+* {
+  font-family: "Prompt", sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -106,13 +123,13 @@ video {
   top: 0px;
 
   background: #000000;
-  border-bottom: 1px solid #5429cc;
+  border-bottom: 0.08rem solid #5429cc;
 }
 
 .menuTopBarArea {
   margin: 0 auto;
-  max-width: 960px;
-  height: 4.5rem;
+  max-width: 600px;
+  height: 4rem;
 
   align-items: center;
 
@@ -122,35 +139,25 @@ video {
   grid-row-gap: 1em;
 }
 
-.bodyPage {
-  padding-top: 4.5rem;
-  margin: 0 auto;
-  width: 70rem;
-  max-width: 70rem;
-  color: white;
-}
-
 .menuButton {
   cursor: pointer;
 
   border-radius: 50px;
   color: white;
   display: flex;
+  max-width: 7rem;
   height: 45%;
-  padding: 0.1rem 2rem;
+  padding: 0rem 2rem;
 
   align-items: center;
   font-size: 0.8rem;
-  font-family: "Roboto", sans-serif;
 
-  margin: 0rem 3%;
-
-  border: 2px solid;
-  border-color: #33cc95;
+  border: 0.08rem solid #33cc95;
+  margin: 0rem auto;
 
   transition: 0.2s;
-
   white-space: nowrap;
+  user-select: none;
 }
 
 .menuButton:hover {
@@ -158,9 +165,56 @@ video {
 }
 
 .iconButtonMenu {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-right: 0.5rem;
+}
+
+.bodyPage {
+  padding-top: 4.5rem;
+  margin: 0 auto;
+
+  width: 70vw;
+  max-width: 70rem;
+  height: calc(100% - 4.5rem);
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apresentation {
+  text-align: center;
+  user-select: none;
+}
+
+.subtitle_1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: -1rem;
+}
+
+.subtitle_2 {
+  margin-left: 10px;
+  font-size: 23px;
+  letter-spacing: 11px;
+  font-family: "Chivo Mono", monospace !important;
+  color: #33cc95;
+}
+
+.title_1 {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: -1rem;
+  color: #5429cc;
+}
+
+.imageFront {
+  width: 23vw;
+  margin: 2rem;
 }
 
 @media (max-width: 500px) {
