@@ -38,7 +38,7 @@ function App() {
       </div>
       <div className="bodyPage">
         <div className="apresentation">
-          <h3 className="subtitle_1">Hi, my name is</h3>
+          <h3 className="subtitle_1_spc">Hi, my name is</h3>
           <a href={gitHub.html_url} target="_blank">
             <h1 className="title_1">MATEUS RANZANI</h1>
           </a>
