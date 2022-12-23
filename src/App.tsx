@@ -6,7 +6,7 @@ import "./styles/global.css";
 function App() {
   let [gitHub, setGitHub] = useState({} as githubInterface);
 
-  const teste = async () => {
+  const getUserGithub = async () => {
     try {
       const response = await fetch(
         `https://api.github.com/users/mateusRanzani`
@@ -24,7 +24,7 @@ function App() {
   };
 
   useEffect(() => {
-    teste();
+    getUserGithub();
   }, []);
 
   return (

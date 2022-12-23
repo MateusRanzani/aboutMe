@@ -96,6 +96,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  overflow-x: clip;
 }
 
 * {
@@ -176,11 +177,11 @@ a {
 
   width: 70vw;
   max-width: 70rem;
-  height: calc(100% - 4.5rem);
 
   color: white;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
