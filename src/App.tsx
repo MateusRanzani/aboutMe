@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ApresentationPageOne from "./components/Apresentation/ApresantationPageOne";
-import MenuButton from "./components/MenuButtons/MenuButton";
+import MenuTopBar from "./components/MenuTopBar/MenuTopBar";
 import { githubInterface } from "./interface/githubInterface";
-import "./styles/global.css";
+import "./styles/global.scss";
 
 function App() {
   let [gitHub, setGitHub] = useState({} as githubInterface);
@@ -30,13 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="menuTopBar">
-        <div className="menuTopBarArea">
-          <MenuButton textToButton="ABOUT ME" />
-          <MenuButton textToButton="CONTACT" />
-          <MenuButton textToButton="PROJECTS" />
-        </div>
-      </div>
+      <MenuTopBar />
       <div className="bodyPage">
         <ApresentationPageOne gitHub={gitHub} />
       </div>

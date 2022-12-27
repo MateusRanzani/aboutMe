@@ -1,0 +1,30 @@
+.menuButton {
+  cursor: pointer;
+
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  max-width: 7rem;
+  height: 45%;
+  padding: 0rem 2rem;
+
+  align-items: center;
+  font-size: 0.8rem;
+
+  border: 0.08rem solid #33cc95;
+  margin: 0rem auto;
+
+  transition: 0.2s;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.menuButton:hover {
+  transform: scale(1.03);
+}
+
+.iconButtonMenu {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+}

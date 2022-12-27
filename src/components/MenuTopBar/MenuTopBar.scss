@@ -1,0 +1,35 @@
+.menuTopBar {
+  box-sizing: border-box;
+  z-index: 1;
+
+  position: absolute;
+  width: 100vw;
+  height: 65px;
+  left: 0px;
+  top: 0px;
+
+  background: #000000;
+  border-bottom: 0.08rem solid #5429cc;
+}
+
+.menuTopBarArea {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 4rem;
+
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-row-gap: 1em;
+}
+
+@media (max-width: 500px) {
+  .menuTopBarArea {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-row-gap: 1em;
+  }
+}

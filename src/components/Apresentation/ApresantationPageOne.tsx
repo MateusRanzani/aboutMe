@@ -1,6 +1,6 @@
 import React from "react";
 import { githubInterface } from "../../interface/githubInterface";
-import "./Apresentation.css";
+import "./Apresentation.scss";
 
 interface ApresentationInferface {
   gitHub: githubInterface;

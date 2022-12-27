@@ -4,6 +4,7 @@ import {
   PhoneIcon,
   CodeBracketIcon,
 } from "@heroicons/react/24/solid";
+import "./MenuButton.scss";
 
 interface buttonProps {
   textToButton: string;
