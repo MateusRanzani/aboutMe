@@ -195,53 +195,6 @@ a {
   color: white;
 }
 
-.apresentation {
-  height: 100vh;
-  max-height: 600px;
-
-  margin-top: 40px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  user-select: none;
-}
-
-.subtitle_1_spc {
-  margin-top: 60px;
-  font-size: 35px;
-  letter-spacing: 2px;
-  margin-bottom: -1rem;
-}
-
-.subtitle_1 {
-  font-size: 35px;
-  letter-spacing: 2px;
-  margin-bottom: -1rem;
-}
-
-.subtitle_2 {
-  margin-left: 10px;
-  font-size: 23px;
-  letter-spacing: 11px;
-  font-family: "Chivo Mono", monospace !important;
-  color: #33cc95;
-}
-
-.title_1 {
-  font-size: 70px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  margin-bottom: -1rem;
-  color: #5429cc;
-}
-
-.imageFront {
-  width: 350px;
-  margin: 2rem;
-}
-
 @media (max-width: 500px) {
   .menuTopBarArea {
     display: grid;

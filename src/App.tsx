@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import MenuButton from "./components/MenuButton";
+import ApresentationPageOne from "./components/Apresentation/ApresantationPageOne";
+import MenuButton from "./components/MenuButtons/MenuButton";
 import { githubInterface } from "./interface/githubInterface";
 import "./styles/global.css";
 
@@ -37,15 +38,7 @@ function App() {
         </div>
       </div>
       <div className="bodyPage">
-        <div className="apresentation">
-          <h3 className="subtitle_1_spc">Hi, my name is</h3>
-          <a href={gitHub.html_url} target="_blank">
-            <h1 className="title_1">MATEUS RANZANI</h1>
-          </a>
-          <h3 className="subtitle_2">I am a FullStack Developer</h3>
-          <img className="imageFront" src="imageFront.png" />
-          <h3 className="subtitle_1">Welcome to my project!</h3>
-        </div>
+        <ApresentationPageOne gitHub={gitHub} />
       </div>
     </div>
   );
