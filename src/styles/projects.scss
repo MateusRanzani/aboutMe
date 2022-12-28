@@ -1,0 +1,80 @@
+.bodyPageProjects {
+  margin: 0 auto;
+
+  width: 70vw;
+  max-width: 70rem;
+  height: 100%;
+  min-height: 649px;
+  max-height: 650px;
+
+  position: relative;
+  color: white;
+}
+
+.listOfProjects {
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+
+.boxList {
+  margin: 2rem 2rem;
+}
+
+.titleOfListProjects {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #5429cc;
+}
+
+.contentTitle {
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  color: #33cc95;
+}
+
+.titleProject {
+  font-size: 1.2rem;
+}
+
+.boxProject {
+  color: white;
+  font-weight: 500;
+  background-color: #5429cc;
+  padding: 20px;
+  border-radius: 0px 20px 0px 20px;
+}
+
+.stargazeContent {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.starIcon {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.datesProject {
+  display: flex;
+  justify-content: end;
+  font-size: 0.8rem;
+  margin-bottom: -0.5rem;
+}
+
+.date {
+  margin: 0rem 1rem;
+}
+
+.boxDescription {
+  max-width: 100%;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 0px 10px 0px 10px;
+  background-color: white;
+  color: #000000;
+}

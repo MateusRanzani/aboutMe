@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { githubInterface } from "./interface/githubInterface";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 
