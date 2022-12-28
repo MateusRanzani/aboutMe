@@ -4,14 +4,17 @@ import {
   PhoneIcon,
   CodeBracketIcon,
 } from "@heroicons/react/24/solid";
-import "./MenuButton.scss";
+import "./style.scss";
+import { Link } from "react-router-dom";
 
 interface buttonProps {
   textToButton: string;
+  route: string
 }
 
 function MenuButton(props: buttonProps) {
   return (
+    <Link to={`${props.route}`}>
     <div className="menuButton">
       {props.textToButton === "ABOUT ME" && (
         <UserIcon className="iconButtonMenu" />
@@ -23,8 +26,9 @@ function MenuButton(props: buttonProps) {
         <CodeBracketIcon className="iconButtonMenu" />
       )}
 
-      <p>{props.textToButton}</p>
+      <p style={{textAlign:"center"}}>{props.textToButton}</p>
     </div>
+    </Link>
   );
 }
 
