@@ -23,6 +23,13 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-row-gap: 1em;
+
+
+}
+
+.menuTopBarAreaTrue {
+  @extend .menuTopBarArea;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 500px) {

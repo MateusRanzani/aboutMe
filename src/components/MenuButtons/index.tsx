@@ -10,12 +10,13 @@ import { Link } from "react-router-dom";
 interface buttonProps {
   textToButton: string;
   route: string
+  clickButton: (e: boolean) => void;
 }
 
 function MenuButton(props: buttonProps) {
   return (
     <Link to={`${props.route}`}>
-    <div className="menuButton">
+    <div className="menuButton" onClick={() => props.clickButton(true)}>
       {props.textToButton === "ABOUT ME" && (
         <UserIcon className="iconButtonMenu" />
       )}

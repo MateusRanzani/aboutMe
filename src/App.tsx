@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { githubInterface } from "./interface/githubInterface";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-
+import AboutMe from "./pages/AboutMe";
+import Contact from "./pages/Contact";
 import "./styles/global.scss";
 
 function App() {
@@ -12,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/about_me" element={<AboutMe />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
