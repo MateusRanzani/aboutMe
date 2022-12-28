@@ -78,3 +78,9 @@
   background-color: white;
   color: #000000;
 }
+
+@media screen and (max-width: 650px) {
+  * {
+    display: none;
+  }
+}

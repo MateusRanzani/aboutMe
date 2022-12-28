@@ -148,3 +148,8 @@ a {
   color: white;
 }
 
+@media screen and (max-width: 650px) {
+  * {
+    display: none;
+  }
+}
