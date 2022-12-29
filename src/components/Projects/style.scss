@@ -1,19 +1,25 @@
+.titleOfSection {
+  font-size: 2.2rem;
+  font-weight: 600;
+
+  margin: 2rem;
+
+  color: #5429cc;
+}
+
+.scrollProjects {
+  overflow: auto;
+  max-height: calc(100vh - 10rem);
+}
+
 .bodyPageProjects {
   margin: 0 auto;
 
   width: 70vw;
   max-width: 70rem;
-  height: 100%;
-  min-height: 649px;
-  max-height: 650px;
 
   position: relative;
   color: white;
-}
-
-.listOfProjects {
-  margin-top: 80px;
-  padding-bottom: 40px;
 }
 
 .boxList {

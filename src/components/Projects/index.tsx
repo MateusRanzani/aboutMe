@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
-import MenuTopBar from "../components/MenuTopBar";
-import { githubInterface } from "../interface/githubInterface";
-import { ProjectsGitHbInterface } from "../interface/projectsGitHubInterface";
-import { format } from "date-fns";
 import { StarIcon } from "@heroicons/react/24/solid";
-
-import "../styles/projects.scss";
+import { format } from "date-fns";
+import { useEffect, useState } from "react";
+import { githubInterface } from "../../interface/githubInterface";
+import { ProjectsGitHbInterface } from "../../interface/projectsGitHubInterface";
+import "./style.scss";
 
 function Projects() {
-  let [projects, setProjects] = useState<ProjectsGitHbInterface[]>([]);
-  let [gitHub, setGitHub] = useState({} as githubInterface);
+    let [projects, setProjects] = useState<ProjectsGitHbInterface[]>([]);
+
+    let [gitHub, setGitHub] = useState({} as githubInterface);
 
   const getUserGithub = async () => {
     try {
@@ -43,19 +42,15 @@ function Projects() {
       console.log(error);
     }
   };
-
   useEffect(() => {
     getUserGithub();
   }, []);
-
   return (
-    <div className="App">
-      <MenuTopBar />
       <div className="bodyPageProjects">
-        <div className="listOfProjects">
-          <h1 className="titleOfListProjects">PROJECTS</h1>
+          <h1 className="titleOfSection">PROJECTS</h1>
+          <div>filtros</div>
+          <div className="scrollProjects">
           {projects.map((project) => (
-            <a href={project.html_url} target="_blank">
               <div className="boxList">
                 <div className="contentTitle">
                   <div className="titleProject">{project.name}</div>
@@ -77,6 +72,10 @@ function Projects() {
                     </div>
                   </div>
                   <div className="datesProject">
+                    <button>
+                      Visitar Projeto
+                    </button>
+
                     <p className="date">
                       Created at &nbsp;
                       {format(new Date(project.created_at), "dd/mm/yyyy hh:mm")}
@@ -88,11 +87,9 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </a>
           ))}
+          </div>
         </div>
-      </div>
-    </div>
   );
 }
 

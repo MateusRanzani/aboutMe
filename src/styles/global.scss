@@ -109,11 +109,11 @@ a {
 
 .App {
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   overflow: auto;
   display: flex;
   flex-direction: column;
-  background-color: #000000;
+  // background-color: #000000;
 }
 
 * ::-webkit-scrollbar {
@@ -131,20 +131,49 @@ a {
   border-radius: 100px;
 }
 
-.bodyPage {
+.boxOne {
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
-
-  width: 70vw;
-  max-width: 70rem;
-  height: 100%;
-  min-height: 649px;
-  max-height: 650px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   position: relative;
+  color: white;
+}
+
+.boxTwo {
+  background-color: #040404;
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0 auto;
+  text-align: center;
+  
+  color: white;
+}
+
+.boxTree {
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0 auto;
+  text-align: center;
+  
+  color: white;
+}
+
+.boxFour {
+  background-color: #040404;
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0 auto;
+  text-align: center;
+  
   color: white;
 }
 

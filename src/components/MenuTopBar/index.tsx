@@ -23,16 +23,17 @@ function MenuTopBar() {
             setClickButton(e);
           }}
         />
+
         <MenuButton
-          textToButton="CONTACT"
-          route="/contact"
+          textToButton="PROJECTS"
+          route="/projects"
           clickButton={(e) => {
             setClickButton(e);
           }}
         />
         <MenuButton
-          textToButton="PROJECTS"
-          route="/projects"
+          textToButton="CONTACT"
+          route="/contact"
           clickButton={(e) => {
             setClickButton(e);
           }}

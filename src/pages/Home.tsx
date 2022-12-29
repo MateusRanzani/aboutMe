@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
+import AboutMe from "../components/AboutMe";
 import ApresentationPageOne from "../components/Apresentation";
+import Contacts from "../components/Contacts";
 import MenuTopBar from "../components/MenuTopBar";
+import Projects from "../components/Projects";
 import { githubInterface } from "../interface/githubInterface";
+import { ProjectsGitHbInterface } from "../interface/projectsGitHubInterface";
+
 
 function Home() {
   let [gitHub, setGitHub] = useState({} as githubInterface);
 
+  
   const getUserGithub = async () => {
     try {
       const response = await fetch(
@@ -29,8 +35,17 @@ function Home() {
   return (
     <div className="App">
       <MenuTopBar />
-      <div className="bodyPage">
+      <div className="boxOne">
         <ApresentationPageOne gitHub={gitHub} />
+      </div>
+      <div className="boxTwo">
+        <AboutMe/>
+      </div>
+      <div className="boxTree">
+        <Projects/>
+      </div>
+      <div className="boxFour">
+        <Contacts/>
       </div>
     </div>
   );
