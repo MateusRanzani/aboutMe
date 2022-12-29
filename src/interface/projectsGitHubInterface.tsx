@@ -71,7 +71,7 @@ export interface ProjectsGitHbInterface {
   ssh_url: string;
   clone_url: string;
   svn_url: string;
-  homepage: null;
+  homepage: string;
   size: number;
   stargazers_count: number;
   watchers_count: number;

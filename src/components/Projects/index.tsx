@@ -36,6 +36,7 @@ function Projects() {
       if (response.ok) {
         projects = data;
         setProjects(() => projects);
+        console.log(projects)
         return;
       }
     } catch (error) {
@@ -64,7 +65,8 @@ function Projects() {
                 <a href={project.html_url} target="_blank">
                   <button className="buttonLinkProject">Link do Projeto</button>
                 </a>
-                <a href="" target="_blank">
+                
+                <a href={project.homepage} target="_blank" >
                   <button className="buttonLinkProject">Live Server</button>
                 </a>
               </div>
