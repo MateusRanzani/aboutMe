@@ -19,8 +19,10 @@
   user-select: none;
 }
 
-.menuButton:hover {
-  transform: scale(1.03);
+.menuButton:hover,
+.menuButton:focus {
+  background: #33cc95;
+  transform: scale(1.06);
 }
 
 .iconButtonMenu {

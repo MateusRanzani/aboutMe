@@ -48,7 +48,7 @@ function Projects() {
   return (
     <div className="bodyPageProjects">
       <h1 className="titleOfSection">PROJECTS</h1>
-      <div>filtros</div>
+      {/* <div>filtros</div> */}
       <div className="scrollProjects">
         {projects.map((project) => (
           <div className="cardProject">

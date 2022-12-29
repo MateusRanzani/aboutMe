@@ -1,6 +1,16 @@
 import React from "react";
 import "./style.scss";
 
+import {
+  BoltIcon,
+  PuzzlePieceIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+  RocketLaunchIcon,
+  UserGroupIcon,
+  SquaresPlusIcon,
+  ClockIcon,
+} from "@heroicons/react/24/solid";
+
 function AboutMe() {
   return (
     <div className="bodyPage">
@@ -23,31 +33,31 @@ function AboutMe() {
 
       <h2 className="secondaryTitleOfSection">My Skills</h2>
       <div className="cardOfSkills">
-        <div>
+        <div className="iconS">
           <i className="iconSkill devicon-react-original"></i>
           <p>ReactJs</p>
         </div>
-        <div>
+        <div className="iconS">
           <i className="iconSkill devicon-javascript-plain"></i>
           <p>JavaScript</p>
         </div>
-        <div>
+        <div className="iconS">
           <i className="iconSkill devicon-nextjs-original"></i>
           <p>NextJs</p>
         </div>
-        <div>
+        <div className="iconS">
           <i className="iconSkill devicon-css3-plain"></i>
           <p>Css</p>
         </div>
-        <div>
+        <div className="iconS">
           <i className="iconSkill devicon-nodejs-plain"></i>
           <p>NodeJs</p>
         </div>
-        <div>
+        <div className="iconS">
           <i className="iconSkill devicon-java-plain"></i>
           <p>Java</p>
         </div>
-        <div>
+        <div className="iconS">
           <i className="iconSkill devicon-mysql-plain"></i>
           <p>MySql</p>
         </div>
@@ -55,32 +65,32 @@ function AboutMe() {
 
       <h2 className="secondaryTitleOfSectionSftS">My Soft Skills</h2>
       <div className="cardOfSkills">
-        <div>
-          <img src="icons/raio.png" className="iconHardSkill" />
+        <div className="iconM">
+          <BoltIcon className="iconHardSkill" />
           <p>Proatividade</p>
         </div>
-        <div>
-          <img src="icons/cooperacao.png" className="iconHardSkill" />
+        <div className="iconM">
+          <PuzzlePieceIcon className="iconHardSkill" />
           <p>Resolução de Problemas</p>
         </div>
-        <div>
-          <img src="icons/bolha-de-bate-papo.png" className="iconHardSkill" />
+        <div className="iconM">
+          <ChatBubbleOvalLeftEllipsisIcon className="iconHardSkill" />
           <p>Comunicação</p>
         </div>
-        <div>
-          <img src="icons/ideia.png" className="iconHardSkill" />
+        <div className="iconM">
+          <RocketLaunchIcon className="iconHardSkill" />
           <p>Criatividade</p>
         </div>
-        <div>
-          <img src="icons/inspiracao.png" className="iconHardSkill" />
+        <div className="iconM">
+          <UserGroupIcon className="iconHardSkill" />
           <p>Cooperação</p>
         </div>
-        <div>
-          <img src="icons/adaptativo.png" className="iconHardSkill" />
+        <div className="iconM">
+          <SquaresPlusIcon className="iconHardSkill" />
           <p>Adaptatividade</p>
         </div>
-        <div>
-          <img src="icons/ampulheta.png" className="iconHardSkill" />
+        <div className="iconM">
+          <ClockIcon className="iconHardSkill" />
           <p>Pontualidade</p>
         </div>
       </div>
