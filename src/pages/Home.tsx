@@ -34,7 +34,10 @@ function Home() {
   }, []);
   return (
     <div className="App">
+      <div>
       <MenuTopBar />
+
+      </div>
       <div className="boxOne">
         <ApresentationPageOne gitHub={gitHub} />
       </div>

@@ -9,11 +9,16 @@
 
 .scrollProjects {
   overflow: auto;
-  max-height: calc(100vh - 10rem);
+  max-height: calc(100vh - 14rem);
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 200px;
 }
 
 .bodyPageProjects {
   margin: 0 auto;
+  padding-top: 3rem;
 
   width: 70vw;
   max-width: 70rem;
@@ -22,42 +27,54 @@
   color: white;
 }
 
-.boxList {
-  margin: 2rem 2rem;
+.cardProject {
+  margin: 0.5rem;
+  width: 10rem;
+  height: auto;
 }
 
-.titleOfListProjects {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  color: #5429cc;
-}
-
-.contentTitle {
-  display: flex;
-  font-weight: 600;
-  justify-content: space-between;
-  color: #33cc95;
-}
-
-.titleProject {
-  font-size: 1.2rem;
-}
-
-.boxProject {
+.projectTitle {
   color: white;
   font-weight: 500;
-  background-color: #5429cc;
-  padding: 20px;
-  border-radius: 0px 20px 0px 20px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.stargazeContent {
-  margin-top: 5px;
+.cardOfTitle {
+  max-width: 100%;
+  padding: 2px 5px;
+  margin: 0 auto;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+}
+
+.cardContent {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+
+  border-radius: 10px;
+  padding: 0.2rem;
+  background-color: #33cc95;
+  color: #000000;
+  font-weight: 500;
+
+  height: 10rem;
+
+  position: relative;
+}
+
+.linguage {
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.dateProject {
+  font-size: 0.7rem;
 }
 
 .starIcon {
@@ -65,24 +82,19 @@
   margin-right: 5px;
 }
 
-.datesProject {
-  display: flex;
-  justify-content: end;
+.buttonLinkProject {
+  margin: 0.3rem;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  color: white;
   font-size: 0.8rem;
-  margin-bottom: -0.5rem;
-}
+  padding: 0.2rem;
+  margin: 0.2rem;
 
-.date {
-  margin: 0rem 1rem;
-}
+  background: rgba(0, 0, 0, 0.4);
 
-.boxDescription {
-  max-width: 100%;
-  display: flex;
-  padding: 5px 10px;
-  border-radius: 0px 10px 0px 10px;
-  background-color: white;
-  color: #000000;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {

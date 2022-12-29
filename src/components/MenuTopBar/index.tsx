@@ -3,40 +3,24 @@ import "./style.scss";
 import MenuButton from "../MenuButtons";
 
 function MenuTopBar() {
-  let [clickButton, setClickButton] = useState(false);
-
   return (
     <div className="menuTopBar">
-      <div className={clickButton ? "menuTopBarAreaTrue" : "menuTopBarArea"}>
-        {clickButton && (
-          <div
-            onClick={() => setClickButton(() => false)}
-            style={{ color: "white" }}
-          >
-            teste
-          </div>
-        )}
+      <div className="menuTopBarArea">
         <MenuButton
           textToButton="ABOUT ME"
           route="/about_me"
-          clickButton={(e) => {
-            setClickButton(e);
-          }}
+          clickButton={(e) => {}}
         />
 
         <MenuButton
           textToButton="PROJECTS"
           route="/projects"
-          clickButton={(e) => {
-            setClickButton(e);
-          }}
+          clickButton={(e) => {}}
         />
         <MenuButton
           textToButton="CONTACT"
           route="/contact"
-          clickButton={(e) => {
-            setClickButton(e);
-          }}
+          clickButton={(e) => {}}
         />
       </div>
     </div>

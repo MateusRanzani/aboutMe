@@ -6,9 +6,9 @@ import { ProjectsGitHbInterface } from "../../interface/projectsGitHubInterface"
 import "./style.scss";
 
 function Projects() {
-    let [projects, setProjects] = useState<ProjectsGitHbInterface[]>([]);
+  let [projects, setProjects] = useState<ProjectsGitHbInterface[]>([]);
 
-    let [gitHub, setGitHub] = useState({} as githubInterface);
+  let [gitHub, setGitHub] = useState({} as githubInterface);
 
   const getUserGithub = async () => {
     try {
@@ -46,50 +46,33 @@ function Projects() {
     getUserGithub();
   }, []);
   return (
-      <div className="bodyPageProjects">
-          <h1 className="titleOfSection">PROJECTS</h1>
-          <div>filtros</div>
-          <div className="scrollProjects">
-          {projects.map((project) => (
-              <div className="boxList">
-                <div className="contentTitle">
-                  <div className="titleProject">{project.name}</div>
-                  <div>{project.language}</div>
+    <div className="bodyPageProjects">
+      <h1 className="titleOfSection">PROJECTS</h1>
+      <div>filtros</div>
+      <div className="scrollProjects">
+        {projects.map((project) => (
+          <div className="cardProject">
+            <div className="cardContent">
+              <div>
+                <div className="cardOfTitle">
+                  <h2 className="projectTitle">{project.name}</h2>
                 </div>
-
-                <div className="boxProject">
-                  <div className="boxDescription">
-                    <div>
-                      {project.description !== null
-                        ? project.description
-                        : "This project does not contain description"}
-                    </div>
-                  </div>
-                  <div>
-                    <div className="stargazeContent">
-                      <StarIcon className="starIcon" />
-                      {project.stargazers_count}
-                    </div>
-                  </div>
-                  <div className="datesProject">
-                    <button>
-                      Visitar Projeto
-                    </button>
-
-                    <p className="date">
-                      Created at &nbsp;
-                      {format(new Date(project.created_at), "dd/mm/yyyy hh:mm")}
-                    </p>
-                    <p>
-                      Updated at &nbsp;
-                      {format(new Date(project.updated_at), "dd/mm/yyyy hh:mm")}
-                    </p>
-                  </div>
-                </div>
+                <p className="linguage">{project.language}</p>
+                <p className="dateProject">
+                  {format(new Date(project.created_at), "dd/MM/yyyy")}
+                </p>
+                <a href={project.html_url} target="_blank">
+                  <button className="buttonLinkProject">Link do Projeto</button>
+                </a>
+                <a href="" target="_blank">
+                  <button className="buttonLinkProject">Live Server</button>
+                </a>
               </div>
-          ))}
+            </div>
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
   );
 }
 
