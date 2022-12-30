@@ -7,7 +7,7 @@ interface ApresentationInferface {
   gitHub: githubInterface;
 }
 
-function ApresentationPageOne(props: ApresentationInferface) {
+function Apresentation(props: ApresentationInferface) {
   return (
     <div className="apresentation">
       <link
@@ -40,4 +40,4 @@ function ApresentationPageOne(props: ApresentationInferface) {
   );
 }
 
-export default ApresentationPageOne;
+export default Apresentation;

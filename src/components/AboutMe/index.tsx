@@ -13,7 +13,7 @@ import {
 
 function AboutMe() {
   return (
-    <div className="bodyPage">
+    <div className="bodyPage" id="aboutMeAnchor">
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"

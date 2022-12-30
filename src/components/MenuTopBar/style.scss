@@ -1,38 +1,61 @@
-.menuTopBar {
-  box-sizing: border-box;
-  z-index: 1;
 
-  position: fixed;
-  width: 100vw;
-  height: 65px;
-  left: 0px;
-  top: 0px;
 
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-
-  border-bottom: 0.01rem solid rgba(84, 41, 204, 0.1);
-}
-
-.menuTopBarArea {
-  margin: 0 auto;
-  max-width: 600px;
-  height: 4rem;
-
-  align-items: center;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-row-gap: 1em;
-}
-
-@media (max-width: 500px) {
+@media screen and (min-width: 650px) {
+  .menuTopBar {
+    box-sizing: border-box;
+    z-index: 1;
+  
+    position: fixed;
+    width: 100vw;
+    height: 65px;
+    left: 0px;
+    top: 0px;
+  
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+  
+    border-bottom: 0.01rem solid rgba(84, 41, 204, 0.1);
+  }
+  
   .menuTopBarArea {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 4rem;
+  
+    align-items: center;
+  
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-row-gap: 1em;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .menuTopBar {
+    box-sizing: border-box;
+    z-index: 1;
+  
+    position: fixed;
+    width: 100vw;
+   
+    left: 0px;
+    top: 0px;
+  
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+  
+    border-bottom: 0.01rem solid rgba(84, 41, 204, 0.1);
+  }
+  
+  .menuTopBarArea {
+    height: 5rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
   }
 }

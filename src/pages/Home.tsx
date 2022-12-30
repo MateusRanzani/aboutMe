@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AboutMe from "../components/AboutMe";
-import ApresentationPageOne from "../components/Apresentation";
+import Apresentation from "../components/Apresentation";
 import Contacts from "../components/Contacts";
 import MenuTopBar from "../components/MenuTopBar";
 import Projects from "../components/Projects";
@@ -39,7 +39,7 @@ function Home() {
 
       </div>
       <div className="boxOne">
-        <ApresentationPageOne gitHub={gitHub} />
+        <Apresentation gitHub={gitHub} />
       </div>
       <div className="boxTwo">
         <AboutMe/>
@@ -50,6 +50,10 @@ function Home() {
       <div className="boxFour">
         <Contacts/>
       </div>
+      <div className="boxFive">
+        Project created by Mateus Ranzani
+      </div>
+      
     </div>
   );
 }

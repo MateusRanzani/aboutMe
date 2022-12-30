@@ -1,103 +1,226 @@
-.apresentation {
-  margin-top: 65px;
-
-  text-align: center;
-  user-select: none;
-}
-
-.subtitle_1_spc {
-  font-size: 30px;
-  letter-spacing: 2px;
-  margin-bottom: -1rem;
-}
-
-.subtitle_1 {
-  font-size: 25px;
-  letter-spacing: 2px;
-  margin-bottom: -1rem;
-}
-
-.title_1 {
-  font-size: 60px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  margin-bottom: -1rem;
-  color: #5429cc;
-}
-
-.subtitle_2 {
-  margin-left: 10px;
-  font-size: 23px;
-  letter-spacing: 10.8px;
-  font-family: "Chivo Mono", monospace !important;
-  color: #33cc95;
-}
-
-.imageFront {
-  width: 280px;
-  margin: 2rem;
-  
-  animation: shake 2s;
-
-  animation-iteration-count: infinite;
-}
-
-.contentButtons {
-  display: flex;
-  justify-content: center;
-}
-
-.buttonApresentation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.2rem 1rem;
-  font-size: 0.9rem;
-  color: #33cc95;
-  width: 8rem;
-  height: 1.5rem;
-
-
-
-  border: 0.08rem solid #33cc95;
-  border-radius: 50px;
-
-  margin: 0 1rem;
-
-  transition: 0.1s;
-}
-
-.buttonApresentationLinkedin {
-  @extend .buttonApresentation;
-  
-  color: white;
-  border: 0.08rem solid white;
-}
-
-.buttonApresentation:hover,
-.buttonApresentation:focus {
-  color: white;
-  background: #33cc95;
-  transform: scale(1.13);
-}
-
-.buttonApresentationLinkedin:hover,
-.buttonApresentationLinkedin:focus {
-  color: #000000;
-  background: white;
-  transform: scale(1.13);
-}
-
-
-.icon {
-  width: 22px;
-  margin: 0.3rem;
-}
-
 @keyframes shake {
-  0% { transform: translate(0px, 0px) ; }
-  
-  50% { transform: translate(0px, 10px)  }
- 
-  100% { transform: translate(0px, 0px) }
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, 10px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .apresentation {
+    margin-top: 80px;
+
+    text-align: center;
+    user-select: none;
+  }
+
+  .subtitle_1_spc {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .subtitle_1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: -1rem;
+  }
+
+  .title_1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 3px;
+    color: #5429cc;
+  }
+
+  .subtitle_2 {
+    margin-left: 10px;
+    font-size: 23px;
+    letter-spacing: 10.8px;
+    font-family: "Chivo Mono", monospace !important;
+    color: #33cc95;
+  }
+
+  .imageFront {
+    width: 280px;
+    margin: 2rem;
+
+    animation: shake 2s;
+
+    animation-iteration-count: infinite;
+  }
+
+  .contentButtons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonApresentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    color: #33cc95;
+    width: 8rem;
+    height: 1.5rem;
+
+    border: 0.08rem solid #33cc95;
+    border-radius: 50px;
+
+    margin: 0 0.2rem;
+
+    transition: 0.1s;
+  }
+
+  .buttonApresentationLinkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    width: 8rem;
+    height: 1.5rem;
+
+    border-radius: 50px;
+
+    margin: 0 0.2rem;
+
+    transition: 0.1s;
+
+    color: white;
+    border: 0.08rem solid white;
+  }
+
+  .buttonApresentation:hover,
+  .buttonApresentation:focus {
+    color: white;
+    background: #33cc95;
+    transform: scale(1.13);
+  }
+
+  .buttonApresentationLinkedin:hover,
+  .buttonApresentationLinkedin:focus {
+    color: #000000;
+    background: white;
+    transform: scale(1.13);
+  }
+
+  .icon {
+    width: 22px;
+    margin: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .apresentation {
+    margin-top: 65px;
+
+    text-align: center;
+    user-select: none;
+  }
+
+  .subtitle_1_spc {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: -1rem;
+  }
+
+  .subtitle_1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: -1rem;
+  }
+
+  .title_1 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: -1rem;
+    color: #5429cc;
+  }
+
+  .subtitle_2 {
+    margin-left: 10px;
+    font-size: 23px;
+    letter-spacing: 10.8px;
+    font-family: "Chivo Mono", monospace !important;
+    color: #33cc95;
+  }
+
+  .imageFront {
+    width: 280px;
+    margin: 2rem;
+
+    animation: shake 2s;
+
+    animation-iteration-count: infinite;
+  }
+
+  .contentButtons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonApresentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    color: #33cc95;
+    width: 8rem;
+    height: 1.5rem;
+
+    border: 0.08rem solid #33cc95;
+    border-radius: 50px;
+
+    margin: 0 1rem;
+
+    transition: 0.1s;
+  }
+
+  .buttonApresentationLinkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    width: 8rem;
+    height: 1.5rem;
+
+    border-radius: 50px;
+
+    margin: 0 1rem;
+
+    transition: 0.1s;
+
+    color: white;
+    border: 0.08rem solid white;
+  }
+
+  .buttonApresentation:hover,
+  .buttonApresentation:focus {
+    color: white;
+    background: #33cc95;
+    transform: scale(1.13);
+  }
+
+  .buttonApresentationLinkedin:hover,
+  .buttonApresentationLinkedin:focus {
+    color: #000000;
+    background: white;
+    transform: scale(1.13);
+  }
+
+  .icon {
+    width: 22px;
+    margin: 0.3rem;
+  }
 }

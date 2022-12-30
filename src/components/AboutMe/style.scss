@@ -28,59 +28,122 @@
   color: #33cc95;
 }
 
-.abotMeResume {
-  margin: 0 auto;
-  width: 60vw;
-  max-width: 50rem;
-}
+@media screen and (max-width: 650px) {
+  .abotMeResume {
+    margin: 0 auto;
+    width: 70vw;
+    max-width: 50rem;
+  }
 
-.cardOfSkills {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
+  .cardOfSkills {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
 
-  margin: 0 auto;
-  width: 60vw;
-  max-width: 50rem;
-  padding: 1rem;
+    margin: 0 auto;
+    width: 85vw;
+    max-width: 50rem;
+    padding: 1rem;
 
-  display: flex;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1em;
+    justify-content: center;
 
-  p {
-    font-size: 0.8rem;
-    margin: 0rem 0.7rem;
+    p {
+      font-size: 0.8rem;
+      margin: 0rem 0.3rem;
+    }
+  }
+
+  .iconSkill {
+    font-size: 1.5rem;
+
+    margin: 1.3rem;
+  }
+
+  .iconHardSkill {
+    width: 1.5rem;
+
+    margin: 0rem 1.3rem;
+  }
+
+  .iconS {
+    transition: 0.2s;
+  }
+
+  .iconS:hover,
+  .iconS:focus {
+    color: #5429cc;
+    transform: scale(1.2);
+  }
+
+  .iconM {
+    transition: 0.2s;
+  }
+
+  .iconM:hover,
+  .iconM:focus {
+    color: #33cc95;
+    transform: scale(1.2);
   }
 }
 
-.iconSkill {
-  font-size: 3rem;
+@media screen and (min-width: 650px) {
+  .abotMeResume {
+    margin: 0 auto;
+    width: 60vw;
+    max-width: 50rem;
+  }
 
-  margin: 1.3rem;
-}
+  .cardOfSkills {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
 
-.iconHardSkill {
-  width: 2.8rem;
+    margin: 0 auto;
+    width: 60vw;
+    max-width: 50rem;
+    padding: 1rem;
 
-  margin: 0rem 1.3rem;
-}
+    display: flex;
+    justify-content: center;
 
-.iconS {
-  transition: 0.2s;
-}
+    p {
+      font-size: 0.8rem;
+      margin: 0rem 0.7rem;
+    }
+  }
 
-.iconS:hover,
-.iconS:focus {
-  color: #5429cc;
-  transform: scale(1.2);
-}
+  .iconSkill {
+    font-size: 3rem;
 
-.iconM {
-  transition: 0.2s;
-}
+    margin: 1.3rem;
+  }
 
-.iconM:hover,
-.iconM:focus {
-  color: #33cc95;
-  transform: scale(1.2);
+  .iconHardSkill {
+    width: 2.8rem;
+
+    margin: 0rem 1.3rem;
+  }
+
+  .iconS {
+    transition: 0.2s;
+  }
+
+  .iconS:hover,
+  .iconS:focus {
+    color: #5429cc;
+    transform: scale(1.2);
+  }
+
+  .iconM {
+    transition: 0.2s;
+  }
+
+  .iconM:hover,
+  .iconM:focus {
+    color: #33cc95;
+    transform: scale(1.2);
+  }
 }
