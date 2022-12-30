@@ -6,3 +6,78 @@
 
     color: #5429cc;
 }
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    width: fit-content;
+    margin: 0 auto;
+
+    padding: 4rem;
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgb(0 0 0 / 37%) 0px 8px 32px 0px;
+    border-radius: 10px;
+  }
+  
+  .title{
+    margin-bottom: 14px;
+  }
+  
+  .form{
+    min-width: 45vw;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input{
+    margin-bottom: 14px;
+    height: 34px;
+    border-radius: 4px;
+    border: 0;
+    padding: 0 8px;
+  }
+  
+  .textarea{
+    margin-bottom: 14px;
+    border-radius: 4px;
+    border: 0;
+    padding: 8px;
+    height: 94px;
+    resize: none;
+  }
+  
+  .buttonSendEmail{
+    height: 34px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    background-color: #33CC95;
+    font-size: 18px;
+    transition: 0.15s;
+  }
+  
+  .buttonSendEmail:hover{
+    color: white;
+    background-color: #5429cc;
+    transform: scale(1.01);
+  }
+
+  .iconF {
+    width: 30px;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+
+    transition: 0.15s;
+  }
+
+  .iconF:hover{
+    transform: scale(1.2);
+  }

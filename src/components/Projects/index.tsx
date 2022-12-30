@@ -36,7 +36,6 @@ function Projects() {
       if (response.ok) {
         projects = data;
         setProjects(() => projects);
-        console.log(projects)
         return;
       }
     } catch (error) {
@@ -51,8 +50,8 @@ function Projects() {
       <h1 className="titleOfSection">PROJECTS</h1>
       {/* <div>filtros</div> */}
       <div className="scrollProjects">
-        {projects.map((project) => (
-          <div className="cardProject">
+        {projects.map((project, key) => (
+          <div className="cardProject" key={key}>
             <div className="cardContent">
               <div>
                 <div className="cardOfTitle">
@@ -65,8 +64,8 @@ function Projects() {
                 <a href={project.html_url} target="_blank">
                   <button className="buttonLinkProject">Link do Projeto</button>
                 </a>
-                
-                <a href={project.homepage} target="_blank" >
+
+                <a href={project.homepage} target="_blank">
                   <button className="buttonLinkProject">Live Server</button>
                 </a>
               </div>
