@@ -1,7 +1,7 @@
 import React from "react";
 import { githubInterface } from "../../interface/githubInterface";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
-import { TypeWriter } from "../TypeWriter"
+import Typewriter from "typewriter-effect";
 import "./style.scss";
 
 interface ApresentationInferface {
@@ -17,9 +17,21 @@ function Apresentation(props: ApresentationInferface) {
       />
       <h3 className="subtitle_1_spc">Hi, my name is</h3>
       <h1 className="title_1">MATEUS RANZANI</h1>
-        <h3 className="subtitle_2"></h3>
-        
-        <TypeWriter value="I'm FullStack Developer" />
+      <div className="subtitle_2">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("I'm Front")
+              .pauseFor(200)
+              .deleteChars(5)
+              .typeString("Back")
+              .pauseFor(200)
+              .deleteChars(4)
+              .typeString("FullStack Developer")
+              .start();
+          }}
+        />
+      </div>
 
       <img className="imageFront" src="imageFront.png" />
 
