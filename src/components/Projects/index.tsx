@@ -46,7 +46,7 @@ function Projects() {
     getUserGithub();
   }, []);
   return (
-    <div className="bodyPageProjects" id="projectsAnchor">
+    <div className="bodyPageProjects" id="projectsAnchor" data-anime="left">
       <h1 className="titleOfSection">PROJECTS</h1>
       {/* <div>filtros</div> */}
       <div className="scrollProjects">

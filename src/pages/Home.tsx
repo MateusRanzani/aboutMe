@@ -7,11 +7,32 @@ import Projects from "../components/Projects";
 import { githubInterface } from "../interface/githubInterface";
 import { ProjectsGitHbInterface } from "../interface/projectsGitHubInterface";
 
-
 function Home() {
   let [gitHub, setGitHub] = useState({} as githubInterface);
 
-  
+  const target = document.querySelectorAll("[data-anime]");
+  const targetL = document.querySelectorAll("[data-animeL]");
+  const animationClass = "animate";
+  const animationClassL = "animateL";
+
+  function animeScroll() {
+    target.forEach(function (element) {
+      if (element.getBoundingClientRect().top < 300) {
+        element.classList.add(animationClass);
+      }
+    });
+
+    targetL.forEach(function (element) {
+      if (element.getBoundingClientRect().top < 300) {
+        element.classList.add(animationClassL);
+      }
+    });
+  }
+
+  window.addEventListener("scroll", function () {
+    animeScroll();
+  });
+
   const getUserGithub = async () => {
     try {
       const response = await fetch(
@@ -35,25 +56,21 @@ function Home() {
   return (
     <div className="App">
       <div>
-      <MenuTopBar />
-
+        <MenuTopBar />
       </div>
       <div className="boxOne">
         <Apresentation gitHub={gitHub} />
       </div>
       <div className="boxTwo">
-        <AboutMe/>
+        <AboutMe />
       </div>
       <div className="boxTree">
-        <Projects/>
+        <Projects />
       </div>
       <div className="boxFour">
-        <Contacts/>
+        <Contacts />
       </div>
-      <div className="boxFive">
-        Project created by Mateus Ranzani
-      </div>
-      
+      <div className="boxFive">Project created by Mateus Ranzani</div>
     </div>
   );
 }

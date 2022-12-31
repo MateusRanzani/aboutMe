@@ -155,7 +155,6 @@ a {
   color: white;
 }
 
-
 .boxFive {
   width: 100vw;
   min-height: 7vh;
@@ -171,7 +170,6 @@ a {
   backdrop-filter: blur(15px);
   border-top: 0.01rem solid rgba(84, 41, 204, 0.15);
 }
-
 
 @media screen and (max-width: 650px) {
   .boxOne {
@@ -191,13 +189,12 @@ a {
     background-color: #040404;
     width: 100vw;
     min-height: 80vh;
-  
+
     margin: 0 auto;
     text-align: center;
-  
+
     color: white;
   }
-  
 }
 
 @media screen and (min-width: 650px) {
@@ -218,12 +215,41 @@ a {
     background-color: #040404;
     width: 100vw;
     min-height: 100vh;
-  
+
     margin: 0 auto;
     text-align: center;
-  
+
     color: white;
   }
-  
 }
 
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-animeL] {
+  opacity: 0;
+  transition: 2s;
+}
+
+[data-anime].animate {
+  opacity: 1;
+}
+
+[data-animeL].animateL {
+  opacity: 1;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(1800px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(00px);
+  }
+}

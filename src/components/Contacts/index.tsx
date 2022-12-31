@@ -42,7 +42,7 @@ function Contacts() {
   };
 
   return (
-    <div className="boxOfContacts" id="contactsAnchor">
+    <div className="boxOfContacts" id="contactsAnchor" data-animeL>
       <h2 className="titleOfSection">Contacts</h2>
       <div className="container">
         <form className="form" onSubmit={sendEmail}>

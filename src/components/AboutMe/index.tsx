@@ -12,8 +12,10 @@ import {
 } from "@heroicons/react/24/solid";
 
 function AboutMe() {
+  
+
   return (
-    <div className="bodyPage" id="aboutMeAnchor">
+    <div className="bodyPage" id="aboutMeAnchor" data-anime="left">
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
