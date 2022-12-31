@@ -1,6 +1,7 @@
 import React from "react";
 import { githubInterface } from "../../interface/githubInterface";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
+import { TypeWriter } from "../TypeWriter"
 import "./style.scss";
 
 interface ApresentationInferface {
@@ -16,7 +17,10 @@ function Apresentation(props: ApresentationInferface) {
       />
       <h3 className="subtitle_1_spc">Hi, my name is</h3>
       <h1 className="title_1">MATEUS RANZANI</h1>
-      <h3 className="subtitle_2">I'm FullStack Developer</h3>
+        <h3 className="subtitle_2"></h3>
+        
+        <TypeWriter value="I'm FullStack Developer" />
+
       <img className="imageFront" src="imageFront.png" />
 
       <div className="contentButtons">
