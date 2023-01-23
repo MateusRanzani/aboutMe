@@ -15,7 +15,7 @@ function AboutMe() {
   
 
   return (
-    <div className="bodyPage" id="aboutMeAnchor" data-anime="left">
+    <div className="bodyPage"  data-anime="left">
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"

@@ -61,13 +61,13 @@ function Home() {
       <div className="boxOne">
         <Apresentation gitHub={gitHub} />
       </div>
-      <div className="boxTwo">
+      <div className="boxTwo" id="aboutMeAnchor">
         <AboutMe />
       </div>
-      <div className="boxTree">
+      <div className="boxTree" id="projectsAnchor">
         <Projects />
       </div>
-      <div className="boxFour">
+      <div className="boxFour" id="contactsAnchor">
         <Contacts />
       </div>
       <div className="boxFive">Project created by Mateus Ranzani</div>
