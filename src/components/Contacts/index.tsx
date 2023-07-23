@@ -43,7 +43,7 @@ function Contacts() {
 
   return (
     <div className="boxOfContacts"  data-animeL>
-      <h2 className="titleOfSection">Contacts</h2>
+      <h2 className="titleOfSection">Contact</h2>
       <div className="container">
         <form className="form" onSubmit={sendEmail}>
           <input

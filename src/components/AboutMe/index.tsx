@@ -12,10 +12,8 @@ import {
 } from "@heroicons/react/24/solid";
 
 function AboutMe() {
-  
-
   return (
-    <div className="bodyPage"  data-anime="left">
+    <div className="bodyPage" data-anime="left">
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -23,14 +21,13 @@ function AboutMe() {
 
       <h2 className="titleOfSection">About Me</h2>
       <p className="abotMeResume">
-        I'm 22 years old, and i am student of Análise e Desenvolvimento de
-        Sistemas at UNINTER and Ciências Contábeis at Estácio. I worked for a
-        few years as a graphic designer and started as a front end developer. I
-        discovered my affinity for technology when I got my first notebook at
-        age 8.
+        I am 23 years old and currently studying Analysis and Systems
+        Development at UNINTER and Accounting Sciences at UNICID - Cruzeiro do
+        Sul. I worked as a graphic designer for several years and later
+        transitioned into a front-end developer role.
         <br />
-        Since then I have been developing new skills over time, to become a
-        great professional.
+        Over time, I have been honing my skills and continuously seeking to
+        expand my knowledge to become a more qualified professional.
       </p>
 
       <h2 className="secondaryTitleOfSection">My Skills</h2>
@@ -69,31 +66,27 @@ function AboutMe() {
       <div className="cardOfSkills">
         <div className="iconM">
           <BoltIcon className="iconHardSkill" />
-          <p>Proatividade</p>
+          <p>Proactivity</p>
         </div>
         <div className="iconM">
           <PuzzlePieceIcon className="iconHardSkill" />
-          <p>Resolução de Problemas</p>
+          <p>Proficiency in problem-solving</p>
         </div>
         <div className="iconM">
           <ChatBubbleOvalLeftEllipsisIcon className="iconHardSkill" />
-          <p>Comunicação</p>
+          <p>Communication</p>
         </div>
         <div className="iconM">
           <RocketLaunchIcon className="iconHardSkill" />
-          <p>Criatividade</p>
+          <p>Creativity</p>
         </div>
         <div className="iconM">
           <UserGroupIcon className="iconHardSkill" />
-          <p>Cooperação</p>
+          <p>Cooperation</p>
         </div>
         <div className="iconM">
           <SquaresPlusIcon className="iconHardSkill" />
-          <p>Adaptatividade</p>
-        </div>
-        <div className="iconM">
-          <ClockIcon className="iconHardSkill" />
-          <p>Pontualidade</p>
+          <p>Adaptability</p>
         </div>
       </div>
     </div>
